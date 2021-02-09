@@ -57,8 +57,8 @@ const App = () => {
 
 const reset = () => {
   setBallPosition({
-    left: 0,
-    top: 0,
+    left: "0px",
+    top: "0px",
 //     position: "absolute",
   });
 };
