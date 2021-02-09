@@ -8,12 +8,13 @@ const App = () => {
   const [ballPosition,setBallPosition] = useState({
     left: 0,
     top: 0,
-//     position: "absolute",
+    position: "absolute",
   });
 
   const handler = (e) => {
     switch (e.keyCode) {
       case 39:
+        console.log("tapped again");
         setBallPosition({
           left: ballPosition.left + 5,
           top: ballPosition.top,
@@ -57,10 +58,11 @@ const App = () => {
 
 const reset = () => {
   setBallPosition({
-    left: "0px",
-    top: "0px",
-//     position: "absolute",
+    left: 0,
+    top: 0,
+    position: "absolute",
   });
+  setRenderBall(false);
 };
 
 const renderChoice = () => {
