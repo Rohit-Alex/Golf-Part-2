@@ -8,7 +8,7 @@ const App = () => {
   const [ballPosition,setBallPosition] = useState({
     left: 0,
     top: 0,
-    position: "absolute",
+//     position: "absolute",
   });
 
   const handler = (e) => {
